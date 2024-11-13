@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Complete documentation",
+    "description": "Write detailed documentation for the API."
+  },
+  {
+    "id": 2,
+    "title": "Fix bug #342",
+    "description": "Resolve the issue with the form validation logic."
+  },
+  {
+    "id": 3,
+    "title": "Implement search feature",
+    "description": "Add a search bar to the main dashboard."
+  },
+  {
+    "id": 4,
+    "title": "Code review",
+    "description": "Review pull requests from the frontend team."
+  },
+  {
+    "id": 5,
+    "title": "Update dependencies",
+    "description": "Upgrade outdated packages to the latest versions."
+  },
+  {
+    "id": 6,
+    "title": "Optimize images",
+    "description": "Compress images to improve page load speed."
+  },
+  {
+    "id": 7,
+    "title": "Design landing page",
+    "description": "Create a new design for the landing page."
+  },
+  {
+    "id": 8,
+    "title": "Set up CI/CD pipeline",
+    "description": "Configure continuous integration and deployment."
+  },
+  {
+    "id": 9,
+    "title": "Prepare release notes",
+    "description": "Draft release notes for the upcoming version."
+  },
+  {
+    "id": 10,
+    "title": "User testing session",
+    "description": "Organize a session for user feedback on new features."
+  }
+]

@@ -1,0 +1,32 @@
+version: "3"
+services:
+  tasks:
+    build: ./tasks
+    ports:
+      - "3001:3001"
+    networks:
+      - backend
+    environment:
+      - NODE_ENV=production
+
+  search:
+    build: ./search
+    ports:
+      - "3002:3002"
+    networks:
+      - backend
+    environment:
+      - NODE_ENV=production
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "8008:8008"
+    networks:
+      - backend
+    environment:
+      - NODE_ENV=production
+
+networks:
+  backend:
+    driver: bridge

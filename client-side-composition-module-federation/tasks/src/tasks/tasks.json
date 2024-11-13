@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Write Code",
+    "description": "Develop new features and ensure code quality."
+  },
+  {
+    "id": 2,
+    "title": "Test App",
+    "description": "Perform unit testing and verify application functionality."
+  },
+  {
+    "id": 3,
+    "title": "Refactor Code",
+    "description": "Optimize the existing codebase for better performance."
+  },
+  {
+    "id": 4,
+    "title": "Review PR",
+    "description": "Check the pull request for code quality and provide feedback."
+  },
+  {
+    "id": 5,
+    "title": "Deploy App",
+    "description": "Deploy the latest version of the app to the production environment."
+  },
+  {
+    "id": 6,
+    "title": "Fix Bug",
+    "description": "Resolve reported bugs and issues in the system."
+  },
+  {
+    "id": 7,
+    "title": "Update Docs",
+    "description": "Update the project documentation to reflect recent changes."
+  },
+  {
+    "id": 8,
+    "title": "Create UI",
+    "description": "Design and implement new user interface components."
+  },
+  {
+    "id": 9,
+    "title": "Plan Sprint",
+    "description": "Organize the tasks and goals for the upcoming sprint."
+  },
+  {
+    "id": 10,
+    "title": "Debug Issue",
+    "description": "Identify and fix performance bottlenecks in the application."
+  },
+  {
+    "id": 11,
+    "title": "Design Logo",
+    "description": "Create a new logo for the branding of the product."
+  },
+  {
+    "id": 12,
+    "title": "Optimize Performance",
+    "description": "Improve application load time and responsiveness."
+  },
+  {
+    "id": 13,
+    "title": "Implement Feature",
+    "description": "Add a new feature based on client requirements."
+  },
+  {
+    "id": 14,
+    "title": "Set Up CI/CD",
+    "description": "Configure continuous integration and deployment pipelines."
+  },
+  {
+    "id": 15,
+    "title": "Run Tests",
+    "description": "Execute automated tests to ensure system stability."
+  },
+  {
+    "id": 16,
+    "title": "Check Logs",
+    "description": "Review server logs for errors or unusual activity."
+  },
+  {
+    "id": 17,
+    "title": "Research Topic",
+    "description": "Investigate new technologies and trends relevant to the project."
+  },
+  {
+    "id": 18,
+    "title": "Sync with Team",
+    "description": "Hold a meeting to align on the current progress and next steps."
+  },
+  {
+    "id": 19,
+    "title": "Review Design",
+    "description": "Evaluate the latest UI/UX designs for feedback and improvements."
+  },
+  {
+    "id": 20,
+    "title": "Analyze Data",
+    "description": "Examine user data and analytics to inform product decisions."
+  }
+]

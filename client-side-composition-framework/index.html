@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shell Application</title>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+      }
+      body main {
+        flex-grow: 2;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Shell Application</h1>
+      <!-- The search component will be rendered here -->
+      <div id="search"></div>
+    </header>
+    <main>
+      <!-- The tasks component will be rendered here -->
+      <div id="tasks"></div>
+    </main>
+
+    <script type="module" src="./register.js"></script>
+  </body>
+</html>

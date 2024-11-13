@@ -1,0 +1,25 @@
+<!-- search/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+  </head>
+  <body>
+    <input type="text" id="searchInput" placeholder="Type to search..." />
+    <button onclick="performSearch()">Search</button>
+
+    <script>
+      async function performSearch() {
+        const query = document.getElementById("searchInput").value;
+        const response = await fetch(
+          `http://localhost:3001/search?query=${encodeURIComponent(query)}`
+        );
+        const data = await response.json();
+
+        window.parent.postMessage({ type: "searchResults", data }, "*");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "gateway-gateway",
+  "version": "1.0.0",
+  "description": "Gateway Service: Gateway Service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.4.0",
+    "http-proxy-middleware": "^2.0.6"
+  }
+}

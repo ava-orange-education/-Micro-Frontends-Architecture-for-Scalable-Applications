@@ -1,0 +1,15 @@
+{
+  "name": "client-side-composition-iframe",
+  "version": "1.0.0",
+  "description": "A project with a shell application, search, and tasks services.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"node search/search.js\" \"node tasks/tasks.js\" \"serve .\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "serve": "^14.2.0"
+  }
+}

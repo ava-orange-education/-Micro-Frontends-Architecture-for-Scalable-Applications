@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shell Application</title>
+    <script type="module" src="./search/search-component.js"></script>
+    <script type="module" src="./tasks/tasks-component.js"></script>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+      }
+      body main {
+        flex-grow: 2;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Shell Application</h1>
+      <search-component></search-component>
+    </header>
+    <main>
+      <tasks-component></tasks-component>
+    </main>
+
+    <script>
+      document.getElementsByTagName("search-component")[0].onSearch = (
+        results
+      ) => {
+        console.log("Search Results Received:", results);
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "tasks-task-list",
+  "version": "1.0.0",
+  "description": "Tasks Service: Task List Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
