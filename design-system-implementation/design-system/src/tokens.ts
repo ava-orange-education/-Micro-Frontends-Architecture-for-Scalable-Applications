@@ -1,0 +1,16 @@
+export default {
+  primaryColor: '#1976d2',
+  secondaryColor: '#0006ca',
+  errorColor: '#d32f2f',
+  infoColor: '#0288d1',
+  warningColor: '#ed6c02',
+  successColor: '#2e7d32',
+  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontSize: 14,
+  fontWeightLight: 300,
+  fontWeightRegular: 400,
+  fontWeightMedium: 500,
+  fontWeightBold: 700,
+  spacing: 8,
+  borderRadius: 4,
+};
