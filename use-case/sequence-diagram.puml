@@ -1,0 +1,64 @@
+@startuml
+participant browser
+participant "nginx reverse\nproxy" as nginx
+participant Composer
+participant "header-\nfragment" as header
+participant "navigation-\nfragment" as nav
+participant "product-listing-\nfragment" as product
+participant "[name]-\nfragment" as name
+
+browser -> nginx: request product\nlisting page\n//category-1
+nginx -> Composer: forward enriched request\n//category-1
+Composer -> header: request fragment\n//ObjectId/<ID>
+header --> Composer
+Composer -> nav: request fragment\n//ObjectId/<ID>
+nav --> Composer
+Composer -> product: request fragment\n//objectId/<ID>
+product --> Composer
+Composer -> name: request fragment\n//parameters
+name --> Composer
+Composer --> nginx: parse HTML
+nginx --> browser
+
+browser -> nginx: request fragment CSS\n//header-fragment/<objectId>/<hash>.css
+nginx -> header: forward enriched requests\n//<fragment-name>/<objectId>/<hash>.css
+header --> nginx
+nginx --> browser
+
+browser -> nginx: //navigation-fragment/<objectId>/<hash>.css
+nginx -> nav: //<fragment-name>/<objectId>/<hash>.css
+nav --> nginx
+nginx --> browser
+
+browser -> nginx: //product-listing-fragment/<objectId>/<hash>.css
+nginx -> product: //<fragment-name>/<objectId>/<hash>.css
+product --> nginx
+nginx --> browser
+
+browser -> nginx: //[name]-fragment/<objectId>/<hash>.css
+nginx -> name: //<fragment-name>/<objectId>/<hash>.css
+name --> nginx
+nginx --> browser
+
+note over browser, name: first paint
+
+browser -> nginx: request fragment JS\n//header-fragment/<objectId>/<hash>.js
+nginx -> header: forward enriched requests\n//<fragment-name>/<objectId>/<hash>.js
+header --> nginx
+nginx --> browser
+
+browser -> nginx: //navigation-fragment/<objectId>/<hash>.js
+nginx -> nav: //<fragment-name>/<objectId>/<hash>.js
+nav --> nginx
+nginx --> browser
+
+browser -> nginx: //product-listing-fragment/<objectId>/<hash>.js
+nginx -> product: //<fragment-name>/<objectId>/<hash>.js
+product --> nginx
+nginx --> browser
+
+browser -> nginx: //[name]-fragment/<objectId>/<hash>.js
+nginx -> name: //<fragment-name>/<objectId>/<hash>.js
+name --> nginx
+nginx --> browser
+@enduml
